@@ -15,11 +15,10 @@ app.use(express.json({ extended: false }));
 
 // Define Routes
 app.use('/api/auth', require('./routes/auth'));
-
-// Placeholder routes for remaining CRUD logic based on the Viva schema requirements
-app.use('/api/campaigns', (req, res) => res.json({ msg: "Campaign routes hit" }));
-app.use('/api/applications', (req, res) => res.json({ msg: "Applications route hit" }));
-app.use('/api/donations', (req, res) => res.json({ msg: "Donations route hit" }));
+app.use('/api/campaigns', require('./routes/campaigns'));
+app.use('/api/applications', require('./routes/applications'));
+app.use('/api/donations', require('./routes/donations'));
+app.use('/api/admin', require('./routes/admin'));
 
 // Basic Home API Check
 app.get('/', (req, res) => res.send('Lokasamyoga API Running Successfully.'));
