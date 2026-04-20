@@ -7,9 +7,10 @@ const app = express();
 
 // Init Middleware
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: ['http://localhost:5173', 'https://lokasamyoga.vercel.app'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'x-auth-token'],
+  credentials: true
 }));
 app.use(express.json({ extended: false }));
 
