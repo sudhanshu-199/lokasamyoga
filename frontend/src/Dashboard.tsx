@@ -276,7 +276,7 @@ export default function Dashboard() {
       <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
         <header className="nav-header" style={{ position: 'sticky', top: 0, zIndex: 100 }}>
           <div className="logo-container">
-            <div className="logo-icon">🌿</div>
+            <img src="/favicon.ico" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: 'var(--radius-sm)' }} />
             <span className="text-gradient">Lokasamyoga</span>
           </div>
         </header>
@@ -450,7 +450,7 @@ export default function Dashboard() {
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <header className="nav-header" style={{ position: 'sticky', top: 0, zIndex: 100 }}>
         <div className="logo-container">
-          <div className="logo-icon">🌿</div>
+          <img src="/favicon.ico" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: 'var(--radius-sm)' }} />
           <span className="text-gradient">Lokasamyoga</span>
         </div>
         <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>

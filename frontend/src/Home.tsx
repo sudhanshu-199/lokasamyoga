@@ -63,7 +63,7 @@ function Home() {
     <>
       <header className="nav-header">
         <div className="logo-container">
-          <div className="logo-icon">🌿</div>
+          <img src="/favicon.ico" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: 'var(--radius-sm)' }} />
           <span className="text-gradient">Lokasamyoga</span>
         </div>
         <nav className="nav-links">
